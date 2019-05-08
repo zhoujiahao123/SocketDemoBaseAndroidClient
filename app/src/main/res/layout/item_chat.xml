@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    android:layout_marginTop="5dp">
+
+    <TextView
+        android:id="@+id/chat_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="17:25"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/chat_avatar"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@color/colorPrimary"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/t1"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/jmui_msg_receive_bg"
+            android:layout_marginLeft="10dp">
+            <TextView
+                android:id="@+id/chat_task_content"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:text="我们已经连接成功啦，开始愉快的聊天吧。"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="6dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
